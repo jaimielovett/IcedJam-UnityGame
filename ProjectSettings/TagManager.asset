@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - GameTimer
+  - Controller
+  - ColouredShape
+  - PaintSplat
+  - AudioController
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Object
+  - ScoreText
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 4216149975
+    locked: 0
+  - name: TimerText
+    uniqueID: 2812199581
+    locked: 0
+  - name: BackShape
+    uniqueID: 3098621059
+    locked: 0
+  - name: FrontShape
+    uniqueID: 2774034707
+    locked: 0
+  - name: Foreground
+    uniqueID: 3955213785
+    locked: 0
+  - name: ScoreText
+    uniqueID: 1581312155
+    locked: 0
+  - name: LoseLifeText
+    uniqueID: 4096083681
+    locked: 0
