@@ -122,7 +122,8 @@ MonoBehaviour:
   _shape: Triangle
   _scoreTextPrefab: {fileID: 1318338588836718, guid: bc2576839d6440e45b0f1df2a4e742af,
     type: 3}
-  _destroyAnimation: {fileID: 196756, guid: c115d8da47ce21a4ba9399bbb615f5cc, type: 3}
+  _destroyAnimation: {fileID: 5262857910340295401, guid: ea16f84b57905aa4fac9856aaea7ae65,
+    type: 3}
   _paintSplat: {fileID: 1746746436486592, guid: a0c9e3eadf1eb0f4481e1b8685e84553,
     type: 3}
 --- !u!60 &60000013166921936
