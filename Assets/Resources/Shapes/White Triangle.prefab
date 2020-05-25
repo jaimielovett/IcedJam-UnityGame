@@ -117,8 +117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446e9d146d93f2e4d8c5707dd8af933b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objName: Blue Triangle
-  _colour: Blue
+  _objName: White Triangle
+  _colour: White
   _shape: Triangle
   _scoreTextPrefab: {fileID: 1791420142781782, guid: f42e40eb3931e7f4b9ee5852940f834a,
     type: 3}

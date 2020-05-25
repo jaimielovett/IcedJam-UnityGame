@@ -117,12 +117,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446e9d146d93f2e4d8c5707dd8af933b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objName: Blue Square
-  _colour: Blue
+  _objName: White Square
+  _colour: White
   _shape: Square
   _scoreTextPrefab: {fileID: 1791420142781782, guid: f42e40eb3931e7f4b9ee5852940f834a,
     type: 3}
-  _destroyAnimation: {fileID: 1500870978965712, guid: 463b988894200b545b77208838ea5035,
+  _destroyAnimation: {fileID: 1273722159978367946, guid: 58b2cc62dd35896429f510e44f828733,
     type: 3}
   _paintSplat: {fileID: 1995574724802640, guid: 4b6499a97fc45f5498f18dcac24111d3,
     type: 3}
