@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: eee12f9b3e46c5f4bae62ea97395aed6
+guid: 0c90121b47ebf9a4a84604778022cfaa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4657452693765791160
-    second: SquareAnim_0
+      213: 195013979871651925
+    second: CircleAnim_0
   - first:
-      213: -418581123777469018
-    second: SquareAnim_1
+      213: -445254643502037742
+    second: CircleAnim_1
   - first:
-      213: 7066163402151031106
-    second: SquareAnim_2
+      213: 8643134548731142785
+    second: CircleAnim_2
   - first:
-      213: -2625079381683257856
-    second: SquareAnim_3
+      213: -2080630547965176773
+    second: CircleAnim_3
   - first:
-      213: 2670720482597369537
-    second: SquareAnim_4
+      213: -2190767927965201834
+    second: CircleAnim_4
   - first:
-      213: -6770642850423159168
-    second: SquareAnim_5
+      213: -4630921620867767383
+    second: CircleAnim_5
   - first:
-      213: 1596929873862514308
-    second: SquareAnim_6
+      213: 6274609266560327340
+    second: CircleAnim_6
   - first:
-      213: 1706536901217112712
-    second: SquareAnim_7
+      213: -6896167335627038059
+    second: CircleAnim_7
   - first:
-      213: -1535248211058551398
-    second: SquareAnim_8
+      213: -6772249056878220227
+    second: CircleAnim_8
   - first:
-      213: 2446557960300420313
-    second: SquareAnim_9
+      213: 3970927633244058522
+    second: CircleAnim_9
   - first:
-      213: -8631419449593754212
-    second: SquareAnim_10
+      213: 8804863293345318116
+    second: CircleAnim_10
   - first:
-      213: 2471256700742019227
-    second: SquareAnim_11
+      213: 5262305217284695930
+    second: CircleAnim_11
   - first:
-      213: -4587612934810305034
-    second: SquareAnim_12
+      213: 8029881121777565391
+    second: CircleAnim_12
   - first:
-      213: -5241761643951142210
-    second: SquareAnim_13
+      213: -2462988606372906701
+    second: CircleAnim_13
   - first:
-      213: 6969402708251795966
-    second: SquareAnim_14
+      213: -1969150195211221413
+    second: CircleAnim_14
   - first:
-      213: -7668449836762890764
-    second: SquareAnim_15
+      213: -6089022795101391403
+    second: CircleAnim_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,7 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SquareAnim_0
+      name: CircleAnim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -149,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bd981a7c8892a040800000000000000
-      internalID: 4657452693765791160
+      spriteID: 5582c747e24d4b200800000000000000
+      internalID: 195013979871651925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_1
+      name: CircleAnim_1
       rect:
         serializedVersion: 2
         x: 64
@@ -170,14 +170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a56f878fa6e03af0800000000000000
-      internalID: -418581123777469018
+      spriteID: 215c773c24322d9f0800000000000000
+      internalID: -445254643502037742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_2
+      name: CircleAnim_2
       rect:
         serializedVersion: 2
         x: 128
@@ -191,14 +191,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 241f3161d2e001260800000000000000
-      internalID: 7066163402151031106
+      spriteID: 182a60b241592f770800000000000000
+      internalID: 8643134548731142785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_3
+      name: CircleAnim_3
       rect:
         serializedVersion: 2
         x: 192
@@ -212,14 +212,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00e319be538d19bd0800000000000000
-      internalID: -2625079381683257856
+      spriteID: b3495bf4a8d1023e0800000000000000
+      internalID: -2080630547965176773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_4
+      name: CircleAnim_4
       rect:
         serializedVersion: 2
         x: 0
@@ -233,14 +233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c6739bf02e401520800000000000000
-      internalID: 2670720482597369537
+      spriteID: 65ac05c3d24d891e0800000000000000
+      internalID: -2190767927965201834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_5
+      name: CircleAnim_5
       rect:
         serializedVersion: 2
         x: 64
@@ -254,14 +254,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0864d7f2338d902a0800000000000000
-      internalID: -6770642850423159168
+      spriteID: 9a3208d4259abbfb0800000000000000
+      internalID: -4630921620867767383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_6
+      name: CircleAnim_6
       rect:
         serializedVersion: 2
         x: 128
@@ -275,14 +275,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 486d8c6624f692610800000000000000
-      internalID: 1596929873862514308
+      spriteID: caed3b532e3e31750800000000000000
+      internalID: 6274609266560327340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_7
+      name: CircleAnim_7
       rect:
         serializedVersion: 2
         x: 192
@@ -296,14 +296,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88254212546dea710800000000000000
-      internalID: 1706536901217112712
+      spriteID: 5926c408854eb40a0800000000000000
+      internalID: -6896167335627038059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_8
+      name: CircleAnim_8
       rect:
         serializedVersion: 2
         x: 0
@@ -317,14 +317,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a951dc9d2e3b1bae0800000000000000
-      internalID: -1535248211058551398
+      spriteID: d3cac4a1d532402a0800000000000000
+      internalID: -6772249056878220227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_9
+      name: CircleAnim_9
       rect:
         serializedVersion: 2
         x: 64
@@ -338,14 +338,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dc5c12a08be3f120800000000000000
-      internalID: 2446557960300420313
+      spriteID: a937b40c4a19b1730800000000000000
+      internalID: 3970927633244058522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_10
+      name: CircleAnim_10
       rect:
         serializedVersion: 2
         x: 128
@@ -359,14 +359,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9d0197edb9073880800000000000000
-      internalID: -8631419449593754212
+      spriteID: 4e449bfd388213a70800000000000000
+      internalID: 8804863293345318116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_11
+      name: CircleAnim_11
       rect:
         serializedVersion: 2
         x: 192
@@ -380,14 +380,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b98288440eaab4220800000000000000
-      internalID: 2471256700742019227
+      spriteID: a7760f7d6b6770940800000000000000
+      internalID: 5262305217284695930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_12
+      name: CircleAnim_12
       rect:
         serializedVersion: 2
         x: 0
@@ -401,14 +401,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fdf4ad87568550c0800000000000000
-      internalID: -4587612934810305034
+      spriteID: fceba2c065edf6f60800000000000000
+      internalID: 8029881121777565391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_13
+      name: CircleAnim_13
       rect:
         serializedVersion: 2
         x: 64
@@ -422,14 +422,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eba460f8e858147b0800000000000000
-      internalID: -5241761643951142210
+      spriteID: 339fe4779e4b1ddd0800000000000000
+      internalID: -2462988606372906701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_14
+      name: CircleAnim_14
       rect:
         serializedVersion: 2
         x: 128
@@ -443,14 +443,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef16ef176da48b060800000000000000
-      internalID: 6969402708251795966
+      spriteID: b564b09945c2ca4e0800000000000000
+      internalID: -1969150195211221413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SquareAnim_15
+      name: CircleAnim_15
       rect:
         serializedVersion: 2
         x: 192
@@ -464,8 +464,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fd78dda081349590800000000000000
-      internalID: -7668449836762890764
+      spriteID: 5d5b9b467027f7ba0800000000000000
+      internalID: -6089022795101391403
       vertices: []
       indices: 
       edges: []

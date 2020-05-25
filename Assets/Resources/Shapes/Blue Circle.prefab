@@ -138,6 +138,7 @@ MonoBehaviour:
   _shape: Circle
   _scoreTextPrefab: {fileID: 1022759197961860, guid: 94a3ac31153a76d469c6f750c6d5b8c9,
     type: 3}
-  _destroyAnimation: {fileID: 192890, guid: 64e0f1bf6bf42e54dac03be55ad85160, type: 3}
+  _destroyAnimation: {fileID: 1157767435108109384, guid: ec28742dd6342084c8b6df659153b869,
+    type: 3}
   _paintSplat: {fileID: 1863202808338316, guid: c1e3e27aed311414f94b87869c241f44,
     type: 3}
