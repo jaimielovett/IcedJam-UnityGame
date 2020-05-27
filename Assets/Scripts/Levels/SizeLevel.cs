@@ -33,8 +33,8 @@ public class SizeLevel : Level {
                 break;
         }
 
-        colouredShapeScale = 0.6f;
-        colouredShapeScaleDecrement = -0.15f;
+        colouredShapeScale = 2.0f;
+        colouredShapeScaleDecrement = -0.5f;
 
         // Shuffle the coloured shape variations list and then store it in a temp list.
         // Remove shapes from the temp list until we've got the same amount in the temp list

@@ -40,10 +40,10 @@ public class OddOneOutLevel : Level
 
         // Select the shape at random we're going to be using as our main shape in the scene.
         int numShapeTypes = 3;
-        int numColourTypes = 3;
+        int numColourTypes = 4;
         if (RewardController.Instance.PurpleColourReward.IsUnlocked)
         {
-            numColourTypes = 4;
+            numColourTypes = 5;
         }
         _colouredShapeToUse = ChooseColouredShape(numShapeTypes, numColourTypes);
 
@@ -79,6 +79,10 @@ public class OddOneOutLevel : Level
         else if (_colouredShapeToUse.Contains("Blue"))
         {
             oddShapeToUse = SelectRandomShapeByColour("Blue", _colouredShapeToUse);
+        }
+        else if (_colouredShapeToUse.Contains("Pink"))
+        {
+            oddShapeToUse = SelectRandomShapeByColour("Pink", _colouredShapeToUse);
         }
         else if (_colouredShapeToUse.Contains("Purple"))
         {

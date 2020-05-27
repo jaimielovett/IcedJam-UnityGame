@@ -61,7 +61,8 @@ public class LevelController : MonoBehaviour {
     //Each time a level is played, an index is removed, until there are none left and the cycle begins again.
     private void PopulateLevelsToPlayList() {
 
-        for (int i = 0; i < NUM_LEVEL_TYPES; i++) {
+        for (int i = 0; i < NUM_LEVEL_TYPES; i++)
+        {
 
             levelsToPlayList.Add(i);
         }

@@ -56,12 +56,15 @@ public class Level {
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Red Circle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Blue Circle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Green Circle");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Pink Circle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Red Square");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Blue Square");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Green Square");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Pink Square");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Red Triangle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Blue Triangle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Green Triangle");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Pink Triangle");
 
         if (RewardController.Instance.PurpleColourReward.IsUnlocked)
         {
@@ -111,8 +114,13 @@ public class Level {
                         colouredShapeToUse = "Green Circle";
                         break;
 
-                    // Purple
+                    // Pink
                     case 3:
+                        colouredShapeToUse = "Pink Circle";
+                        break;
+
+                    // Purple
+                    case 4:
                         colouredShapeToUse = "Purple Circle";
                         break;
                 }
@@ -136,8 +144,13 @@ public class Level {
                         colouredShapeToUse = "Green Square";
                         break;
 
-                    // Purple
+                    // Pink
                     case 3:
+                        colouredShapeToUse = "Pink Square";
+                        break;
+
+                    // Purple
+                    case 4:
                         colouredShapeToUse = "Purple Square";
                         break;
                 }
@@ -161,8 +174,13 @@ public class Level {
                         colouredShapeToUse = "Green Triangle";
                         break;
 
-                    // Purple
+                    // Pink
                     case 3:
+                        colouredShapeToUse = "Pink Triangle";
+                        break;
+
+                    // Purple
+                    case 4:
                         colouredShapeToUse = "Purple Triangle";
                         break;
                 }
@@ -189,6 +207,11 @@ public class Level {
 
                     // Purple
                     case 3:
+                        colouredShapeToUse = "Pink Pentagon";
+                        break;
+
+                    // Purple
+                    case 4:
                         colouredShapeToUse = "Purple Pentagon";
                         break;
                 }

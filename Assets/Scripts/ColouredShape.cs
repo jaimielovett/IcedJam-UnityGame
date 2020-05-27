@@ -354,7 +354,6 @@ public class ColouredShape : MonoBehaviour {
             }
         }
 
-        BackgroundController.Instance.ChangeBackgroundColour(_colour);
         GameObject destroyAnimation = Instantiate(_destroyAnimation, transform.position, Quaternion.identity) as GameObject;
         Destroy(destroyAnimation, 1);
         GameObject paintSplat = Instantiate(_paintSplat, transform.position, Quaternion.identity) as GameObject;

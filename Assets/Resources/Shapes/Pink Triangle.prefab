@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3195147027407155934
+--- !u!1 &4017549579150875160
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3195147027407155931}
-  - component: {fileID: 3195147027407155930}
-  - component: {fileID: 3195147027407155929}
-  - component: {fileID: 3195147027407155928}
-  - component: {fileID: 3195147027407155935}
+  - component: {fileID: 4020742990137342362}
+  - component: {fileID: 3833571999578951436}
+  - component: {fileID: 3995567194445523964}
+  - component: {fileID: 3915805002672087614}
+  - component: {fileID: 3969800193840170918}
   m_Layer: 8
-  m_Name: Proximity Circle 1
+  m_Name: Pink Triangle
   m_TagString: ColouredShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3195147027407155931
+--- !u!4 &4020742990137342362
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195147027407155934}
+  m_GameObject: {fileID: 4017549579150875160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.1866, y: 2.1866, z: 2.1866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3195147027407155930
+--- !u!212 &3833571999578951436
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195147027407155934}
+  m_GameObject: {fileID: 4017549579150875160}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -70,28 +70,28 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -339753511
+  m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 15d0eb00bbcfc36489324f679cf5fabd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: eb3ce7e4c14fc254dba283ef615d0761, type: 3}
+  m_Color: {r: 1, g: 0.46666667, b: 0.65882355, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &3195147027407155929
+--- !u!50 &3995567194445523964
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195147027407155934}
+  m_GameObject: {fileID: 4017549579150875160}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -105,13 +105,34 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &3195147027407155928
-CircleCollider2D:
+--- !u!114 &3915805002672087614
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195147027407155934}
+  m_GameObject: {fileID: 4017549579150875160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446e9d146d93f2e4d8c5707dd8af933b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objName: Pink Triangle
+  _colour: Pink
+  _shape: Triangle
+  _scoreTextPrefab: {fileID: 4851196373380884823, guid: 3b9916d198e3bbb49829197fb97e9578,
+    type: 3}
+  _destroyAnimation: {fileID: 7544865291638142598, guid: c8bd78b484eacee48b582d28265819cd,
+    type: 3}
+  _paintSplat: {fileID: 2503002316530759259, guid: 713eb36a87dd52546a49b8fc7ded49b1,
+    type: 3}
+--- !u!60 &3969800193840170918
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4017549579150875160}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 559b5f94a1fcd694c8c9c874effb9729, type: 2}
@@ -119,26 +140,21 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &3195147027407155935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195147027407155934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 446e9d146d93f2e4d8c5707dd8af933b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objName: White Circle
-  _colour: White
-  _shape: Circle
-  _scoreTextPrefab: {fileID: 1791420142781782, guid: f42e40eb3931e7f4b9ee5852940f834a,
-    type: 3}
-  _destroyAnimation: {fileID: 8224496427959195032, guid: 37bac78581a8c1748876af3eef801c54,
-    type: 3}
-  _paintSplat: {fileID: 1995574724802640, guid: 4b6499a97fc45f5498f18dcac24111d3,
-    type: 3}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.015625, y: 0.484375}
+      - {x: -0.046875, y: 0.46875}
+      - {x: -0.5, y: -0.421875}
+      - {x: -0.5, y: -0.5}
+      - {x: 0.5, y: -0.5}
+      - {x: 0.5, y: -0.453125}
+      - {x: 0.046875, y: 0.484375}
