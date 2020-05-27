@@ -371,14 +371,7 @@ public class ColouredShape : MonoBehaviour {
         ScoreController.Instance.CalculateCorrectClickScore();
         if (GameController.Instance.State == GameState.LEVEL)
         {
-            if (_colour == "Purple")
-            {
-                ScoreController.Instance.CorrectClickScore = (ScoreController.Instance.CorrectClickScore * MultiplierController.Instance.Multiplier) * 2;
-            }
-            else
-            {
-                ScoreController.Instance.CorrectClickScore = ScoreController.Instance.CorrectClickScore * MultiplierController.Instance.Multiplier;
-            }
+            ScoreController.Instance.CorrectClickScore = ScoreController.Instance.CorrectClickScore * MultiplierController.Instance.Multiplier;
             MultiplierController.Instance.MultiplierLogic(TimerController.Instance.RemainingTime);
         }
     }

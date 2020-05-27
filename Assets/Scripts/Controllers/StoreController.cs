@@ -30,18 +30,6 @@ public class StoreController : MonoBehaviour
     [SerializeField] private Sprite _X8MultiplierRewardSpriteUnlocked;
     [SerializeField] private Button _X8MultiplierRewardButton;
 
-    [SerializeField] private GameObject _purpleRewardImage;
-    [SerializeField] private Sprite _purpleRewardSprite;
-    [SerializeField] private Sprite _purpleRewardSpriteCantAfford;
-    [SerializeField] private Sprite _purpleRewardSpriteUnlocked;
-    [SerializeField] private Button _purpleRewardButton;
-
-    [SerializeField] private GameObject _pentagonRewardImage;
-    [SerializeField] private Sprite _pentagonRewardSprite;
-    [SerializeField] private Sprite _pentagonRewardSpriteCantAfford;
-    [SerializeField] private Sprite _pentagonRewardSpriteUnlocked;
-    [SerializeField] private Button _pentagonRewardButton;
-
     [SerializeField] private GameObject _extraLifeRewardImage;
     [SerializeField] private Sprite _extraLifeRewardSprite;
     [SerializeField] private Sprite _extraLifeRewardSpriteCantAfford;
@@ -120,30 +108,6 @@ public class StoreController : MonoBehaviour
             MultiplierController.Instance.MinMultiplier = 8;
             MultiplierController.Instance.Multiplier = MultiplierController.Instance.MinMultiplier;
             ScoreController.Instance.TotalScore -= RewardController.Instance.X8MultiplierReward.Cost;
-            _audioSource.pitch = 1;
-            _audioSource.PlayOneShot(_boughtRewardClip);
-        }
-        SetButtonStatusOnStoreLoad();
-    }
-
-    public void BuyPurpleColour()
-    {
-        if (ScoreController.Instance.TotalScore >= RewardController.Instance.PurpleColourReward.Cost)
-        {
-            RewardController.Instance.PurpleColourReward.IsUnlocked = true;
-            ScoreController.Instance.TotalScore -= RewardController.Instance.PurpleColourReward.Cost;
-            _audioSource.pitch = 1;
-            _audioSource.PlayOneShot(_boughtRewardClip);
-        }
-        SetButtonStatusOnStoreLoad();
-    }
-
-    public void BuyPentagonShape()
-    {
-        if (ScoreController.Instance.TotalScore >= RewardController.Instance.PentagonShapeReward.Cost)
-        {
-            RewardController.Instance.PentagonShapeReward.IsUnlocked = true;
-            ScoreController.Instance.TotalScore -= RewardController.Instance.PentagonShapeReward.Cost;
             _audioSource.pitch = 1;
             _audioSource.PlayOneShot(_boughtRewardClip);
         }
@@ -274,54 +238,6 @@ public class StoreController : MonoBehaviour
             _X8MultiplierRewardButton.GetComponent<Image>().color = new Color(0.98f, 0.54f, 0.58f, 1f);
         }
 
-        // Purple Colour
-        if (RewardController.Instance.PurpleColourReward.IsUnlocked)
-        {
-            _purpleRewardImage.GetComponent<SpriteRenderer>().sprite = _purpleRewardSpriteUnlocked;
-            _purpleRewardButton.interactable = false;
-            // Set the button colour to green.
-            _purpleRewardButton.GetComponent<Image>().color = new Color(0.57f, 0.90f, 0.50f, 1f);
-            _purpleRewardButton.GetComponentInChildren<Text>().text = "U\nn\nl\no\nc\nk\ne\nd";
-        }
-        else if (ScoreController.Instance.TotalScore >= RewardController.Instance.PurpleColourReward.Cost)
-        {
-            _purpleRewardImage.GetComponent<SpriteRenderer>().sprite = _purpleRewardSprite;
-            // Set the button colour to its original colour (white).
-            _purpleRewardButton.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
-            _purpleRewardButton.interactable = true;
-        }
-        else
-        {
-            _purpleRewardImage.GetComponent<SpriteRenderer>().sprite = _purpleRewardSpriteCantAfford;
-            _purpleRewardButton.interactable = false;
-            // Set the button colour to red.
-            _purpleRewardButton.GetComponent<Image>().color = new Color(0.98f, 0.54f, 0.58f, 1f);
-        }
-
-        // Pentagon Shape
-        if (RewardController.Instance.PentagonShapeReward.IsUnlocked)
-        {
-            _pentagonRewardImage.GetComponent<SpriteRenderer>().sprite = _pentagonRewardSpriteUnlocked;
-            _pentagonRewardButton.interactable = false;
-            // Set the button colour to green.
-            _pentagonRewardButton.GetComponent<Image>().color = new Color(0.57f, 0.90f, 0.50f, 1f);
-            _pentagonRewardButton.GetComponentInChildren<Text>().text = "U\nn\nl\no\nc\nk\ne\nd";
-        }
-        else if (ScoreController.Instance.TotalScore >= RewardController.Instance.PentagonShapeReward.Cost && RewardController.Instance.PurpleColourReward.IsUnlocked)
-        {
-            _pentagonRewardImage.GetComponent<SpriteRenderer>().sprite = _pentagonRewardSprite;
-            // Set the button colour to its original colour (white).
-            _pentagonRewardButton.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
-            _pentagonRewardButton.interactable = true;
-        }
-        else
-        {
-            _pentagonRewardImage.GetComponent<SpriteRenderer>().sprite = _pentagonRewardSpriteCantAfford;
-            _pentagonRewardButton.interactable = false;
-            // Set the button colour to red.
-            _pentagonRewardButton.GetComponent<Image>().color = new Color(0.98f, 0.54f, 0.58f, 1f);
-        }
-
         // Extra Life
         if (RewardController.Instance.ExtraLifeReward.IsUnlocked)
         {
@@ -331,7 +247,7 @@ public class StoreController : MonoBehaviour
             _extraLifeRewardButton.GetComponent<Image>().color = new Color(0.57f, 0.90f, 0.50f, 1f);
             _extraLifeRewardButton.GetComponentInChildren<Text>().text = "U\nn\nl\no\nc\nk\ne\nd";
         }
-        else if (ScoreController.Instance.TotalScore >= RewardController.Instance.ExtraLifeReward.Cost && RewardController.Instance.PentagonShapeReward.IsUnlocked)
+        else if (ScoreController.Instance.TotalScore >= RewardController.Instance.ExtraLifeReward.Cost)
         {
             _extraLifeRewardImage.GetComponent<SpriteRenderer>().sprite = _extraLifeRewardSprite;
             // Set the button colour to its original colour (white).
@@ -421,8 +337,6 @@ public class StoreController : MonoBehaviour
         PlayerPrefs.SetInt("X2MultiplierReward", RewardController.Instance.X2MultiplierReward.IsUnlocked ? 1 : 0);
         PlayerPrefs.SetInt("X4MultiplierReward", RewardController.Instance.X4MultiplierReward.IsUnlocked ? 1 : 0);
         PlayerPrefs.SetInt("X8MultiplierReward", RewardController.Instance.X8MultiplierReward.IsUnlocked ? 1 : 0);
-        PlayerPrefs.SetInt("PurpleColourReward", RewardController.Instance.PurpleColourReward.IsUnlocked ? 1 : 0);
-        PlayerPrefs.SetInt("PentagonShapeReward", RewardController.Instance.PentagonShapeReward.IsUnlocked ? 1 : 0);
         PlayerPrefs.SetInt("ExtraLifeReward", RewardController.Instance.ExtraLifeReward.IsUnlocked ? 1 : 0);
         PlayerPrefs.SetInt("X20MaxMultiplierReward", RewardController.Instance.X20MaxMultiplierReward.IsUnlocked ? 1 : 0);
         PlayerPrefs.SetInt("HardModeReward", RewardController.Instance.HardModeReward.IsUnlocked ? 1 : 0);

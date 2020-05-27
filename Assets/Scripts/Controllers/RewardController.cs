@@ -10,8 +10,6 @@ public class RewardController : MonoBehaviour
     public Reward X2MultiplierReward;
     public Reward X4MultiplierReward;
     public Reward X8MultiplierReward;
-    public Reward PurpleColourReward;
-    public Reward PentagonShapeReward;
     public Reward ExtraLifeReward;
     public Reward X20MaxMultiplierReward;
     public Reward HardModeReward;
@@ -34,8 +32,6 @@ public class RewardController : MonoBehaviour
         X2MultiplierReward = new Reward("X2 Reward", 10000, false);
         X4MultiplierReward = new Reward("X4 Reward", 20000, false);
         X8MultiplierReward = new Reward("X4 Reward", 30000, false);
-        PurpleColourReward = new Reward("Purple", 10000, false);
-        PentagonShapeReward = new Reward("Pentagon", 20000, false);
         ExtraLifeReward = new Reward("Extra Life", 30000, false);
         X20MaxMultiplierReward = new Reward("X20 Max Multiplier Reward", 10000, false);
         HardModeReward = new Reward("Hard Mode Reward", 20000, false);

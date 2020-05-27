@@ -337,8 +337,6 @@ public class GameController : MonoBehaviour
         RewardController.Instance.X2MultiplierReward.IsUnlocked = PlayerPrefs.GetInt("X2MultiplierReward") == 1;
         RewardController.Instance.X4MultiplierReward.IsUnlocked = PlayerPrefs.GetInt("X4MultiplierReward") == 1;
         RewardController.Instance.X8MultiplierReward.IsUnlocked = PlayerPrefs.GetInt("X8MultiplierReward") == 1;
-        RewardController.Instance.PurpleColourReward.IsUnlocked = PlayerPrefs.GetInt("PurpleColourReward") == 1;
-        RewardController.Instance.PentagonShapeReward.IsUnlocked = PlayerPrefs.GetInt("PentagonShapeReward") == 1;
         RewardController.Instance.ExtraLifeReward.IsUnlocked = PlayerPrefs.GetInt("ExtraLifeReward") == 1;
         RewardController.Instance.X20MaxMultiplierReward.IsUnlocked = PlayerPrefs.GetInt("X20MaxMultiplierReward") == 1;
         RewardController.Instance.HardModeReward.IsUnlocked = PlayerPrefs.GetInt("HardModeReward") == 1;

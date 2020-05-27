@@ -65,13 +65,9 @@ public class Level {
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Blue Triangle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Green Triangle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Pink Triangle");
-
-        if (RewardController.Instance.PurpleColourReward.IsUnlocked)
-        {
-            ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Circle");
-            ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Square");
-            ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Triangle");
-        }
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Circle");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Square");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Triangle");
     }
 
     protected void AddAllVariationsToAvoidLevelShapesList() {
