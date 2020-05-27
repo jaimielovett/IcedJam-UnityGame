@@ -72,14 +72,6 @@ public class Level {
             ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Square");
             ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Triangle");
         }
-
-        if (RewardController.Instance.PentagonShapeReward.IsUnlocked)
-        {
-            ColouredShapesController.Instance.AddToColouredShapeVariationsList("Red Pentagon");
-            ColouredShapesController.Instance.AddToColouredShapeVariationsList("Green Pentagon");
-            ColouredShapesController.Instance.AddToColouredShapeVariationsList("Blue Pentagon");
-            ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Pentagon");
-        }
     }
 
     protected void AddAllVariationsToAvoidLevelShapesList() {
@@ -182,37 +174,6 @@ public class Level {
                     // Purple
                     case 4:
                         colouredShapeToUse = "Purple Triangle";
-                        break;
-                }
-                break;
-
-            // Pentagon
-            case 3:
-                switch (colourToUse)
-                {
-                    // Red
-                    case 0:
-                        colouredShapeToUse = "Red Pentagon";
-                        break;
-
-                    // Blue
-                    case 1:
-                        colouredShapeToUse = "Blue Pentagon";
-                        break;
-
-                    // Green
-                    case 2:
-                        colouredShapeToUse = "Green Pentagon";
-                        break;
-
-                    // Purple
-                    case 3:
-                        colouredShapeToUse = "Pink Pentagon";
-                        break;
-
-                    // Purple
-                    case 4:
-                        colouredShapeToUse = "Purple Pentagon";
                         break;
                 }
                 break;

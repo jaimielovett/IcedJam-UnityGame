@@ -368,26 +368,16 @@ public class ColouredShape : MonoBehaviour {
         Destroy(paintSplat, paintSplatDisappearTime);
         Destroy(gameObject);
 
-        // X2 Points for a Purple shape or a Pentagon.
-        // X4 Points for a Purple Pentagon.
         ScoreController.Instance.CalculateCorrectClickScore();
         if (GameController.Instance.State == GameState.LEVEL)
         {
-            if (_colour == "Purple" || _shape == "Pentagon")
+            if (_colour == "Purple")
             {
                 ScoreController.Instance.CorrectClickScore = (ScoreController.Instance.CorrectClickScore * MultiplierController.Instance.Multiplier) * 2;
-            }
-            else if (_colour == "Purple" && _shape == "Pentagon")
-            {
-                ScoreController.Instance.CorrectClickScore = (ScoreController.Instance.CorrectClickScore * MultiplierController.Instance.Multiplier) * 4;
             }
             else
             {
                 ScoreController.Instance.CorrectClickScore = ScoreController.Instance.CorrectClickScore * MultiplierController.Instance.Multiplier;
-            }
-            if (GameController.Instance.IsLevelCompletedSuccessfully)
-            {
-
             }
             MultiplierController.Instance.MultiplierLogic(TimerController.Instance.RemainingTime);
         }
