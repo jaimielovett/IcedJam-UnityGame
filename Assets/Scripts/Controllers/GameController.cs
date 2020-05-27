@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour
     private bool _isAvoidLevelActive = false;
     private bool _isProximityLevelActive = false;
     private bool _isMemoryLevelActive = false;
-    private bool _isBackgroundClickAllowed = false;
+    private bool _isBackgroundClickAllowed = true;
 
     private int _numLives;
     private int _maxNumLives = 2;
@@ -326,7 +326,7 @@ public class GameController : MonoBehaviour
         IsAvoidLevelActive = false;
         IsProximityLevelActive = false;
         IsMemoryLevelActive = false;
-        IsBackgroundClickAllowed = false;
+        IsBackgroundClickAllowed = true;
         NumLives = MaxNumLives;
     }
 

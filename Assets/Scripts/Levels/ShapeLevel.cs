@@ -10,7 +10,7 @@ public class ShapeLevel : Level
             case GameDifficulty.EASY:
                 MinNumShapesForLevel = 3;
                 MaxNumShapesForLevel = 6;
-                TimerController.Instance.CorrectClickTimerIncrease = 5.0f;
+                TimerController.Instance.CorrectClickTimerIncrease = 30.0f;
                 break;
 
             case GameDifficulty.NORMAL:
