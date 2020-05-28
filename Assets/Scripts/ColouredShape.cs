@@ -369,16 +369,16 @@ public class ColouredShape : MonoBehaviour {
 
         GameObject destroyAnimation = Instantiate(_destroyAnimation, transform.position, Quaternion.identity) as GameObject;
         Destroy(destroyAnimation, 1);
-        //GameObject paintSplat = Instantiate(_paintSplat, transform.position, Quaternion.identity) as GameObject;
+        GameObject paintSplat = Instantiate(_paintSplat, transform.position, Quaternion.identity) as GameObject;
         // Set the scale of the paint splat. We do this by multiplying 1.67 * the shapes scale.
         // This is because paint splats were made to 0.5 scale and most shapes are 0.3 (a difference of 1.67).
         // This scaling of 1.67 means that for any levels where bigger shapes are used, bigger splats will occur.
         // However it's nice to have slightly random splats, so instead of 1.67, Random.Range(1.37, 1.97).
         float scaleAmount = Random.Range(1.37f, 1.97f);
-        //paintSplat.transform.localScale = new Vector3(scaleAmount * transform.localScale.x, scaleAmount * transform.localScale.y, 0);
+        paintSplat.transform.localScale = new Vector3(scaleAmount * transform.localScale.x, scaleAmount * transform.localScale.y, 0);
         AudioController.Instance.PlayImpactClip();
         int paintSplatDisappearTime = Random.Range(10, 20);
-        //Destroy(paintSplat, paintSplatDisappearTime);
+        Destroy(paintSplat, paintSplatDisappearTime);
         Destroy(gameObject);
 
         ScoreController.Instance.CalculateCorrectClickScore();

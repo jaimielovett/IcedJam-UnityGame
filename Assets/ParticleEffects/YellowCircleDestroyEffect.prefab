@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5788080797493609992}
   - component: {fileID: 5788080797493609995}
   m_Layer: 0
-  m_Name: YelllowCircleDestroyEffect
+  m_Name: YellowCircleDestroyEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4817,8 +4817,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -956841071
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
