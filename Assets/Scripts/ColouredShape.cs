@@ -42,19 +42,19 @@ public class ColouredShape : MonoBehaviour {
         switch (GameController.Instance.Difficulty) {
 
             case GameDifficulty.EASY:
-                _speed = 1.0f;
+                _speed = ConfigConstants.k_EasyDifficultyShapeSpeed;
                 break;
 
             case GameDifficulty.NORMAL:
-                _speed = 7.0f;
+                _speed = ConfigConstants.k_NormalDifficultyShapeSpeed;
                 break;
 
             case GameDifficulty.HARD:
-                _speed = 6.0f;
+                _speed = ConfigConstants.k_HardDifficultyShapeSpeed;
                 break;
 
             case GameDifficulty.INSANE:
-                _speed = 8.0f;
+                _speed = ConfigConstants.k_InsaneDifficultyShapeSpeed;
                 break;
         }
 

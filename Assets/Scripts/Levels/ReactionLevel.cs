@@ -15,26 +15,26 @@ public class ReactionLevel : Level {
         switch (GameController.Instance.Difficulty) {
 
             case GameDifficulty.EASY:
-                minTimer = 3.0f;
-                maxTimer = 6.0f;
+                minTimer = ConfigConstants.k_EasyDifficultyReactionLevelMinTime;
+                maxTimer = ConfigConstants.k_EasyDifficultyReactionLevelMaxTime;
                 MaxNumShapesForLevel = 1;
                 break;
 
             case GameDifficulty.NORMAL:
-                minTimer = 1.0f;
-                maxTimer = 2.0f;
+                minTimer = ConfigConstants.k_NormalDifficultyReactionLevelMinTime;
+                maxTimer = ConfigConstants.k_NormalDifficultyReactionLevelMaxTime;
                 MaxNumShapesForLevel = 1;
                 break;
 
             case GameDifficulty.HARD:
-                minTimer = 1.0f;
-                maxTimer = 3.0f;
+                minTimer = ConfigConstants.k_HardDifficultyReactionLevelMinTime;
+                maxTimer = ConfigConstants.k_HardDifficultyReactionLevelMaxTime;
                 MaxNumShapesForLevel = 1;
                 break;
 
             case GameDifficulty.INSANE:
-                minTimer = 1.0f;
-                maxTimer = 2.0f;
+                minTimer = ConfigConstants.k_InsaneDifficultyReactionLevelMinTime;
+                maxTimer = ConfigConstants.k_InsaneDifficultyReactionLevelMaxTime;
                 MaxNumShapesForLevel = 1;
                 break;
         }

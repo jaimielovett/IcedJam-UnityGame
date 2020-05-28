@@ -23,19 +23,19 @@ public class ProximityLevel : Level {
 
             case GameDifficulty.EASY:
 
-                TimerController.Instance.RemainingTime = 4.0f;
+                TimerController.Instance.RemainingTime = ConfigConstants.k_EasyDifficultyProximityLevelTime;
                 break;
 
             case GameDifficulty.NORMAL:
-                TimerController.Instance.RemainingTime = 3.0f;
+                TimerController.Instance.RemainingTime = ConfigConstants.k_NormalDifficultyProximityLevelTime;
                 break;
 
             case GameDifficulty.HARD:
-                TimerController.Instance.RemainingTime = 8.0f;
+                TimerController.Instance.RemainingTime = ConfigConstants.k_HardDifficultyProximityLevelTime;
                 break;
 
             case GameDifficulty.INSANE:
-                TimerController.Instance.RemainingTime = 10.0f;
+                TimerController.Instance.RemainingTime = ConfigConstants.k_InsaneDifficultyProximityLevelTime;
                 break;
         }
 

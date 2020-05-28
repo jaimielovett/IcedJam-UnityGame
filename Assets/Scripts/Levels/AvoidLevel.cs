@@ -11,27 +11,27 @@ public class AvoidLevel : Level {
         switch (GameController.Instance.Difficulty) {
 
             case GameDifficulty.EASY:
-                MinNumShapesForLevel = 5;
-                MaxNumShapesForLevel = 10;
-                TimerController.Instance.RemainingTime = 4.0f;
+                MinNumShapesForLevel = ConfigConstants.k_EasyDifficultyAvoidLevelMinShapes;
+                MaxNumShapesForLevel = ConfigConstants.k_EasyDifficultyAvoidLevelMaxShapes;
+                TimerController.Instance.RemainingTime = ConfigConstants.k_EasyDifficultyAvoidLevelTime;
                 break;
 
             case GameDifficulty.NORMAL:
-                MinNumShapesForLevel = 20;
-                MaxNumShapesForLevel = 30;
-                TimerController.Instance.RemainingTime = 6.0f;
+                MinNumShapesForLevel = ConfigConstants.k_NormalDifficultyAvoidLevelMinShapes;
+                MaxNumShapesForLevel = ConfigConstants.k_NormalDifficultyAvoidLevelMaxShapes;
+                TimerController.Instance.RemainingTime = ConfigConstants.k_NormalDifficultyAvoidLevelTime;
                 break;
 
             case GameDifficulty.HARD:
-                MinNumShapesForLevel = 15;
-                MaxNumShapesForLevel = 20;
-                TimerController.Instance.RemainingTime = 8.0f;
+                MinNumShapesForLevel = ConfigConstants.k_HardDifficultyAvoidLevelMinShapes;
+                MaxNumShapesForLevel = ConfigConstants.k_HardDifficultyAvoidLevelMaxShapes;
+                TimerController.Instance.RemainingTime = ConfigConstants.k_HardDifficultyAvoidLevelTime;
                 break;
 
             case GameDifficulty.INSANE:
-                MinNumShapesForLevel = 20;
-                MaxNumShapesForLevel = 30;
-                TimerController.Instance.RemainingTime = 10.0f;
+                MinNumShapesForLevel = ConfigConstants.k_InsaneDifficultyAvoidLevelMinShapes;
+                MaxNumShapesForLevel = ConfigConstants.k_InsaneDifficultyAvoidLevelMaxShapes;
+                TimerController.Instance.RemainingTime = ConfigConstants.k_InsaneDifficultyAvoidLevelTime;
                 break;
         }
 

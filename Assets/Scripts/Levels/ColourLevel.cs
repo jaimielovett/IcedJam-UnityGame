@@ -8,27 +8,27 @@ public class ColourLevel : Level {
         switch (GameController.Instance.Difficulty)
         {
             case GameDifficulty.EASY:
-                MinNumShapesForLevel = 3;
-                MaxNumShapesForLevel = 6;
-                TimerController.Instance.CorrectClickTimerIncrease = 30.0f;
+                MinNumShapesForLevel = ConfigConstants.k_EasyDifficultyLevelMinShapes;
+                MaxNumShapesForLevel = ConfigConstants.k_EasyDifficultyLevelMaxShapes;
+                TimerController.Instance.CorrectClickTimerIncrease = ConfigConstants.k_EasyDifficultyLevelTime;
                 break;
 
             case GameDifficulty.NORMAL:
-                MinNumShapesForLevel = 12;
-                MaxNumShapesForLevel = 15;
-                TimerController.Instance.CorrectClickTimerIncrease = 2.0f;
+                MinNumShapesForLevel = ConfigConstants.k_NormalDifficultyLevelMinShapes;
+                MaxNumShapesForLevel = ConfigConstants.k_NormalDifficultyLevelMaxShapes;
+                TimerController.Instance.CorrectClickTimerIncrease = ConfigConstants.k_NormalDifficultyLevelTime;
                 break;
 
             case GameDifficulty.HARD:
-                MinNumShapesForLevel = 9;
-                MaxNumShapesForLevel = 12;
-                TimerController.Instance.CorrectClickTimerIncrease = 2.0f;
+                MinNumShapesForLevel = ConfigConstants.k_HardDifficultyLevelMinShapes;
+                MaxNumShapesForLevel = ConfigConstants.k_HardDifficultyLevelMaxShapes;
+                TimerController.Instance.CorrectClickTimerIncrease = ConfigConstants.k_HardDifficultyLevelTime;
                 break;
 
             case GameDifficulty.INSANE:
-                MinNumShapesForLevel = 12;
-                MaxNumShapesForLevel = 15;
-                TimerController.Instance.CorrectClickTimerIncrease = 1.0f;
+                MinNumShapesForLevel = ConfigConstants.k_InsaneDifficultyLevelMinShapes;
+                MaxNumShapesForLevel = ConfigConstants.k_InsaneDifficultyLevelMaxShapes;
+                TimerController.Instance.CorrectClickTimerIncrease = ConfigConstants.k_InsaneDifficultyLevelTime;
                 break;
         }
 
