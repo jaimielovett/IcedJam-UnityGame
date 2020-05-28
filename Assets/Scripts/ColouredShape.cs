@@ -39,6 +39,7 @@ public class ColouredShape : MonoBehaviour {
         _originalColour = _sprite.color;
         _originalScale = transform.localScale;
 
+        // Set the speed of the shapes based on the difficulty.
         switch (GameController.Instance.Difficulty) {
 
             case GameDifficulty.EASY:
@@ -285,7 +286,7 @@ public class ColouredShape : MonoBehaviour {
             // All of the gameObjects in the scene are destroyed.
             if (destroyShape && (GameController.Instance.CurrentLevel != LevelType.ODD_ONE_OUT || GameController.Instance.CurrentLevel != LevelType.REACTION)) {
                 GameController.Instance.IsLevelComplete = true;
-                ColouredShapesController.Instance.ClearAllLists();
+                GameController.Instance.IsLevelCompletedSuccessfully = true;
                 ColouredShapesController.Instance.DestroyAllShapes();
                 DestroyShape();
                 ScoreController.Instance.CurrentScore += ScoreController.Instance.CorrectClickScore;
@@ -301,8 +302,8 @@ public class ColouredShape : MonoBehaviour {
         }
     }
 
-    void OnMouseOver() {
-
+    void OnMouseOver() 
+    {
         if (GameController.Instance.CurrentLevel == LevelType.AVOID &&
             GameController.Instance.IsAvoidLevelActive              &&
             GameController.Instance.State != GameState.PAUSE) {
@@ -312,35 +313,6 @@ public class ColouredShape : MonoBehaviour {
             ColouredShapesController.Instance.DestroyAllShapes();
             AudioController.Instance.PlayGameOverClip();
         }
-
-        bool isCurrentTargetShape = false;
-        switch (GameController.Instance.CurrentLevel)
-        {
-            case LevelType.COLOURED_SHAPE:
-                isCurrentTargetShape = EventController.Instance.OnMouseHoverColouredShape(_objName);
-                break;
-
-            case LevelType.COLOUR:
-                isCurrentTargetShape = EventController.Instance.OnMouseHoverColour(_colour);
-                break;
-
-            case LevelType.ODD_ONE_OUT:
-                isCurrentTargetShape = EventController.Instance.OnMouseHoverColouredShape(_objName);
-                break;
-
-            //case LevelType.SHAPE:
-            //    isCurrentTargetShape = EventController.Instance.OnMouseHoverShape(shape);
-            //    break;
-
-            //case LevelType.LARGEST_SIZE:
-            //    destroyShape = EventController.Instance.OnMouseClickSizeLevel(_objName);
-            //    break;
-
-            //case LevelType.SMALLEST_SIZE:
-            //    destroyShape = EventController.Instance.OnMouseClickSizeLevel(_objName);
-            //    break;
-        }
-
     }
 
     void OnMouseEnter() {
