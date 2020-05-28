@@ -17,7 +17,7 @@ public class SizeLevel : Level {
             case GameDifficulty.NORMAL:
                 MinNumShapesForLevel = 5;
                 MaxNumShapesForLevel = 5;
-                TimerController.Instance.CorrectClickTimerIncrease = 3.0f;
+                TimerController.Instance.CorrectClickTimerIncrease = 2.0f;
                 break;
 
             case GameDifficulty.HARD:

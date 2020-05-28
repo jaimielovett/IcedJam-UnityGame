@@ -22,7 +22,7 @@ public class ReactionLevel : Level {
 
             case GameDifficulty.NORMAL:
                 minTimer = 1.0f;
-                maxTimer = 4.0f;
+                maxTimer = 2.0f;
                 MaxNumShapesForLevel = 1;
                 break;
 

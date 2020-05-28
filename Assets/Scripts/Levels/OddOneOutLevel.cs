@@ -20,9 +20,9 @@ public class OddOneOutLevel : Level
                 break;
 
             case GameDifficulty.NORMAL:
-                MinNumShapesForLevel = 9;
-                MaxNumShapesForLevel = 12;
-                TimerController.Instance.CorrectClickTimerIncrease = 3.0f;
+                MinNumShapesForLevel = 15;
+                MaxNumShapesForLevel = 18;
+                TimerController.Instance.CorrectClickTimerIncrease = 2.0f;
                 break;
 
             case GameDifficulty.HARD:
@@ -40,7 +40,7 @@ public class OddOneOutLevel : Level
 
         // Select the shape at random we're going to be using as our main shape in the scene.
         int numShapeTypes = 3;
-        int numColourTypes = 5;
+        int numColourTypes = 7;
         _colouredShapeToUse = ChooseColouredShape(numShapeTypes, numColourTypes);
 
         // Select the odd coloured shape we're going to use.
@@ -79,6 +79,14 @@ public class OddOneOutLevel : Level
         else if (_colouredShapeToUse.Contains("Pink"))
         {
             oddShapeToUse = SelectRandomShapeByColour("Pink", _colouredShapeToUse);
+        }
+        else if (_colouredShapeToUse.Contains("Orange"))
+        {
+            oddShapeToUse = SelectRandomShapeByColour("Orange", _colouredShapeToUse);
+        }
+        else if (_colouredShapeToUse.Contains("Yellow"))
+        {
+            oddShapeToUse = SelectRandomShapeByColour("Yellow", _colouredShapeToUse);
         }
         else if (_colouredShapeToUse.Contains("Purple"))
         {

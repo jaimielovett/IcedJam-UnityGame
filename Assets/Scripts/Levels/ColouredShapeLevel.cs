@@ -14,9 +14,9 @@ public class ColouredShapeLevel : Level {
                 break;
 
             case GameDifficulty.NORMAL:
-                MinNumShapesForLevel = 6;
-                MaxNumShapesForLevel = 9;
-                TimerController.Instance.CorrectClickTimerIncrease = 3.0f;
+                MinNumShapesForLevel = 12;
+                MaxNumShapesForLevel = 15;
+                TimerController.Instance.CorrectClickTimerIncrease = 2.0f;
                 break;
 
             case GameDifficulty.HARD:

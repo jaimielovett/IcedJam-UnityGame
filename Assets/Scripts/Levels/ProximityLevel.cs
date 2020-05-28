@@ -9,9 +9,9 @@ public class ProximityLevel : Level {
     public ProximityLevel() {
 
         ColouredShapesController.Instance.AddToColouredShapeList("Proximity Circle");
-        ColouredShapesController.Instance.AddToColouredShapeList("Proximity Square");
-        ColouredShapesController.Instance.AddToColouredShapeList("Proximity Triangle");
-        ColouredShapesController.Instance.ShuffleColouredShapeList();
+        //ColouredShapesController.Instance.AddToColouredShapeList("Proximity Square");
+        //ColouredShapesController.Instance.AddToColouredShapeList("Proximity Triangle");
+        //ColouredShapesController.Instance.ShuffleColouredShapeList();
 
         List<string> tempList = ColouredShapesController.Instance.GetColouredShapeList();
         for (int i = 0; i < tempList.Count - 1; i++) {
@@ -27,7 +27,7 @@ public class ProximityLevel : Level {
                 break;
 
             case GameDifficulty.NORMAL:
-                TimerController.Instance.RemainingTime = 6.0f;
+                TimerController.Instance.RemainingTime = 3.0f;
                 break;
 
             case GameDifficulty.HARD:

@@ -57,16 +57,22 @@ public class Level {
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Blue Circle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Green Circle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Pink Circle");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Orange Circle");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Yellow Circle");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Circle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Red Square");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Blue Square");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Green Square");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Pink Square");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Orange Square");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Yellow Square");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Square");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Red Triangle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Blue Triangle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Green Triangle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Pink Triangle");
-        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Circle");
-        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Square");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Orange Triangle");
+        ColouredShapesController.Instance.AddToColouredShapeVariationsList("Yellow Triangle");
         ColouredShapesController.Instance.AddToColouredShapeVariationsList("Purple Triangle");
     }
 
@@ -111,6 +117,16 @@ public class Level {
                     case 4:
                         colouredShapeToUse = "Purple Circle";
                         break;
+
+                    // Orange
+                    case 5:
+                        colouredShapeToUse = "Orange Circle";
+                        break;
+
+                    // Yellow
+                    case 6:
+                        colouredShapeToUse = "Yellow Circle";
+                        break;
                 }
                 break;
 
@@ -141,6 +157,16 @@ public class Level {
                     case 4:
                         colouredShapeToUse = "Purple Square";
                         break;
+
+                    // Orange
+                    case 5:
+                        colouredShapeToUse = "Orange Square";
+                        break;
+
+                    // Yellow
+                    case 6:
+                        colouredShapeToUse = "Yellow Square";
+                        break;
                 }
                 break;
 
@@ -170,6 +196,16 @@ public class Level {
                     // Purple
                     case 4:
                         colouredShapeToUse = "Purple Triangle";
+                        break;
+
+                    // Orange
+                    case 5:
+                        colouredShapeToUse = "Orange Triangle";
+                        break;
+
+                    // Yellow
+                    case 6:
+                        colouredShapeToUse = "Yellow Triangle";
                         break;
                 }
                 break;

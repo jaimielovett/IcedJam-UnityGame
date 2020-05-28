@@ -17,8 +17,8 @@ public class AvoidLevel : Level {
                 break;
 
             case GameDifficulty.NORMAL:
-                MinNumShapesForLevel = 10;
-                MaxNumShapesForLevel = 15;
+                MinNumShapesForLevel = 20;
+                MaxNumShapesForLevel = 30;
                 TimerController.Instance.RemainingTime = 6.0f;
                 break;
 
