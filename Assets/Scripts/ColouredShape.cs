@@ -10,6 +10,7 @@ public class ColouredShape : MonoBehaviour {
     [SerializeField] private GameObject _scoreTextPrefab;
     [SerializeField] private GameObject _destroyAnimation;
     [SerializeField] private GameObject _paintSplat;
+    private Transform _shapeOutline;
 
     private Color _originalColour;
     private Vector3 _originalScale;
@@ -26,6 +27,7 @@ public class ColouredShape : MonoBehaviour {
 
     void Awake() {
         _sprite = GetComponent<SpriteRenderer>();
+        _shapeOutline = transform.GetChild(0);
 
         ColouredShapesController.Instance.AddToColouredShapeList(_objName);
         ColouredShapesController.Instance.AddToColourList(_colour);
@@ -166,11 +168,11 @@ public class ColouredShape : MonoBehaviour {
         {
             // Briefly turn the shape a white colour when it collides with the wall.
             _sprite.color = new Color(1, 1, 1, 1);
-            StartCoroutine(DelayBeforeReturningToOriginalColour(0.1f));
+            StartCoroutine(DelayBeforeReturningToOriginalColour(0.05f));
 
             InvokeRepeating("Shrink", 0f, 0.02f);
         }
-        else if (GameController.Instance.ScreenShakeOn)// Screen shake for the Proximity Level.
+        else if (GameController.Instance.ScreenShakeOn) // Screen shake for the Proximity Level.
         {
             CameraShake.ShakeAll(CameraShake.ShakeType.CameraMatrix,                // Shake Type
                      2,                                                             // Number of Shakes
@@ -311,16 +313,53 @@ public class ColouredShape : MonoBehaviour {
             AudioController.Instance.PlayGameOverClip();
         }
 
+        bool isCurrentTargetShape = false;
+        switch (GameController.Instance.CurrentLevel)
+        {
+            case LevelType.COLOURED_SHAPE:
+                isCurrentTargetShape = EventController.Instance.OnMouseHoverColouredShape(_objName);
+                break;
+
+            case LevelType.COLOUR:
+                isCurrentTargetShape = EventController.Instance.OnMouseHoverColour(_colour);
+                break;
+
+            case LevelType.ODD_ONE_OUT:
+                isCurrentTargetShape = EventController.Instance.OnMouseHoverColouredShape(_objName);
+                break;
+
+            //case LevelType.SHAPE:
+            //    isCurrentTargetShape = EventController.Instance.OnMouseHoverShape(shape);
+            //    break;
+
+            //case LevelType.LARGEST_SIZE:
+            //    destroyShape = EventController.Instance.OnMouseClickSizeLevel(_objName);
+            //    break;
+
+            //case LevelType.SMALLEST_SIZE:
+            //    destroyShape = EventController.Instance.OnMouseClickSizeLevel(_objName);
+            //    break;
+        }
+
     }
 
     void OnMouseEnter() {
 
         _mouseEnteredShape = true;
+
+        if (GameController.Instance.CurrentLevel != LevelType.AVOID ||
+            GameController.Instance.CurrentLevel != LevelType.LARGEST_SIZE ||
+            GameController.Instance.CurrentLevel != LevelType.SMALLEST_SIZE)
+            _shapeOutline.gameObject.SetActive(true);
     }
 
     void OnMouseExit() {
 
         _mouseEnteredShape = false;
+        if (GameController.Instance.CurrentLevel != LevelType.AVOID ||
+            GameController.Instance.CurrentLevel != LevelType.LARGEST_SIZE ||
+            GameController.Instance.CurrentLevel != LevelType.SMALLEST_SIZE)
+            _shapeOutline.gameObject.SetActive(false);
     }
 
     public void DestroyShape() {

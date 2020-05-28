@@ -45,6 +45,21 @@ public class EventController : MonoBehaviour {
         }
     }
 
+    public bool OnMouseHoverColouredShape(string colouredShapeName)
+    {
+        return colouredShapeName == ColouredShapesController.Instance.GetTargetColouredShape() ? true : false;
+    }
+
+    public bool OnMouseHoverColour(string colour)
+    {
+        return colour == ColouredShapesController.Instance.GetTargetColour() ? true : false;
+    }
+
+    public bool OnMouseHoverShape(string shape)
+    {
+        return shape == ColouredShapesController.Instance.GetTargetShape() ? true : false;
+    }
+
     public bool OnMouseClickColour(string colour) {
 
         if (colour == ColouredShapesController.Instance.GetTargetColour()) {
