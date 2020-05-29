@@ -359,8 +359,8 @@ public class ColouredShape : MonoBehaviour {
             {
                 CameraShake.ShakeAll(CameraShake.ShakeType.CameraMatrix,                        // Shake Type
                                  2,                                                             // Number of Shakes
-                                 new Vector3(0.3f, 0.3f, 0),                                    // Shake Amount
-                                 new Vector3(0, 0, 0),                                          // Rotation Amount
+                                 new Vector3(1.5f, 1.5f, 1.5f),                                 // Shake Amount
+                                 new Vector3(0.05f, 0.05f, 0.05f),                              // Rotation Amount
                                  0.1f,                                                          // Distance
                                  50,                                                            // Speed
                                  0.2f,                                                          // Decay
