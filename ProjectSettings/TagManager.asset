@@ -52,6 +52,9 @@ TagManager:
   - name: TimerText
     uniqueID: 2812199581
     locked: 0
+  - name: ParticleEffects
+    uniqueID: 3338126225
+    locked: 0
   - name: BackShape
     uniqueID: 3098621059
     locked: 0
