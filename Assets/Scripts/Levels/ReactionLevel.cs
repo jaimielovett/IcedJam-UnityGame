@@ -10,32 +10,30 @@ public class ReactionLevel : Level {
 
     private string _colouredShapeName;
 
-    public ReactionLevel() : base() {
+    public ReactionLevel() : base() 
+    {
+        MaxNumShapesForLevel = 1;
 
         switch (GameController.Instance.Difficulty) {
 
             case GameDifficulty.EASY:
                 minTimer = ConfigConstants.k_EasyDifficultyReactionLevelMinTime;
                 maxTimer = ConfigConstants.k_EasyDifficultyReactionLevelMaxTime;
-                MaxNumShapesForLevel = 1;
                 break;
 
             case GameDifficulty.NORMAL:
                 minTimer = ConfigConstants.k_NormalDifficultyReactionLevelMinTime;
                 maxTimer = ConfigConstants.k_NormalDifficultyReactionLevelMaxTime;
-                MaxNumShapesForLevel = 1;
                 break;
 
             case GameDifficulty.HARD:
                 minTimer = ConfigConstants.k_HardDifficultyReactionLevelMinTime;
                 maxTimer = ConfigConstants.k_HardDifficultyReactionLevelMaxTime;
-                MaxNumShapesForLevel = 1;
                 break;
 
             case GameDifficulty.INSANE:
                 minTimer = ConfigConstants.k_InsaneDifficultyReactionLevelMinTime;
                 maxTimer = ConfigConstants.k_InsaneDifficultyReactionLevelMaxTime;
-                MaxNumShapesForLevel = 1;
                 break;
         }
 

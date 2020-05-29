@@ -9,25 +9,6 @@ public class SizeLevel : Level {
         MinNumShapesForLevel = 5;
         MaxNumShapesForLevel = 5;
 
-        switch (GameController.Instance.Difficulty) {
-
-            case GameDifficulty.EASY:
-                TimerController.Instance.CorrectClickTimerIncrease = ConfigConstants.k_EasyDifficultyLevelTime;
-                break;
-
-            case GameDifficulty.NORMAL:
-                TimerController.Instance.CorrectClickTimerIncrease = ConfigConstants.k_NormalDifficultyLevelTime;
-                break;
-
-            case GameDifficulty.HARD:
-                TimerController.Instance.CorrectClickTimerIncrease = ConfigConstants.k_HardDifficultyLevelTime;
-                break;
-
-            case GameDifficulty.INSANE:
-                TimerController.Instance.CorrectClickTimerIncrease = ConfigConstants.k_HardDifficultyLevelTime;
-                break;
-        }
-
         colouredShapeScale = 2.0f;
         colouredShapeScaleDecrement = -0.5f;
 

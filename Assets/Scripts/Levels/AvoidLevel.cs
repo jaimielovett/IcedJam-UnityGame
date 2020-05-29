@@ -6,9 +6,10 @@ public class AvoidLevel : Level {
     private float _delayTimer = 1.0f;
 
 	// Use this for initialization
-	public AvoidLevel() {
-
-        switch (GameController.Instance.Difficulty) {
+	public AvoidLevel()
+    {
+        switch (GameController.Instance.Difficulty)
+        {
 
             case GameDifficulty.EASY:
                 MinNumShapesForLevel = ConfigConstants.k_EasyDifficultyAvoidLevelMinShapes;
@@ -39,13 +40,13 @@ public class AvoidLevel : Level {
         TimerController.Instance.ResetLevelElapsedTimer();
     }
 
-    public override void Update() {
-
+    public override void Update()
+    {
         if (TimerController.Instance.LevelElapsedTime > _delayTimer)
             GameController.Instance.IsAvoidLevelActive = true;
 
-        if (TimerController.Instance.RemainingTime <= 0 && GameController.Instance.State != GameState.GAME_OVER) {
-
+        if (TimerController.Instance.RemainingTime <= 0 && GameController.Instance.State != GameState.GAME_OVER)
+        {
             GameController.Instance.IsLevelComplete = true;
             GameController.Instance.IsLevelCompletedSuccessfully = true;
         }
