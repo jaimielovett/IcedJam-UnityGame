@@ -17,6 +17,10 @@ public class ColouredShapesController : MonoBehaviour {
     private string _targetColour;
     private string _targetShape;
 
+    private float delayTime = 0.075f;
+    private float sleepTimeScale = 0.5f;
+    private bool isGameAsleep = false;
+
     public static ColouredShapesController Instance { get; private set; }
 
     void Awake()
@@ -44,11 +48,29 @@ public class ColouredShapesController : MonoBehaviour {
     // Destroys every game object in the scene with the tag 'ColouredShape'.
     public void DestroyAllShapes()
     {
+        isGameAsleep = true;
+        Time.timeScale = sleepTimeScale;
+
         GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("ColouredShape");
         for (int i = 0; i < gameObjects.Length; i++)
         {
             gameObjects[i].GetComponent<ColouredShape>().DestroyShape();
         }
+    }
+
+    private void Update()
+    {
+        if (isGameAsleep)
+        {
+            StartCoroutine(DelayAfterPauseOnDestroy(delayTime));
+            isGameAsleep = false;
+        }
+    }
+
+    private IEnumerator DelayAfterPauseOnDestroy(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Time.timeScale = 1;
     }
 
     // Destroys every game object in the scene with the tag 'PaintSplat'.

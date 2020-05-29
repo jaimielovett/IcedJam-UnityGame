@@ -334,7 +334,9 @@ public class ColouredShape : MonoBehaviour {
             _shapeOutline.gameObject.SetActive(false);
     }
 
-    public void DestroyShape() {
+    public void DestroyShape() 
+    {
+        //Time.timeScale = 0;
 
         // Screen Shake code: If the current level is 'Size' then we want to shake the screen dependant on the scale of the shape.
         // This gives a nice effect for the bigger shapes, making the screen shake more. But the default scale adds a bit too much screen
