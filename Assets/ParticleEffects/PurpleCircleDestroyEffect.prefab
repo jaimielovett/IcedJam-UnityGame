@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2633342337959074979}
   - component: {fileID: 2633342337959074978}
   - component: {fileID: 2633342337959074977}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PurpleCircleDestroyEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

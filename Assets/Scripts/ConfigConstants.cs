@@ -4,16 +4,16 @@ using UnityEngine;
 
 public static class ConfigConstants
 {
-    public const int k_EasyDifficultyLevelMinShapes = 3;
-    public const int k_EasyDifficultyLevelMaxShapes = 6;
-    public const int k_EasyDifficultyAvoidLevelMinShapes = 3;
-    public const int k_EasyDifficultyAvoidLevelMaxShapes = 6;
+    public const int k_EasyDifficultyLevelMinShapes = 6;
+    public const int k_EasyDifficultyLevelMaxShapes = 9;
+    public const int k_EasyDifficultyAvoidLevelMinShapes = 6;
+    public const int k_EasyDifficultyAvoidLevelMaxShapes = 9;
     public const float k_EasyDifficultyLevelTime = 30.0f;
-    public const float k_EasyDifficultyAvoidLevelTime = 2.0f;
-    public const float k_EasyDifficultyProximityLevelTime = 1.0f;
-    public const float k_EasyDifficultyReactionLevelMinTime = 5.0f;
-    public const float k_EasyDifficultyReactionLevelMaxTime = 10.0f;
-    public const float k_EasyDifficultyShapeSpeed = 1.0f;
+    public const float k_EasyDifficultyAvoidLevelTime = 3.0f;
+    public const float k_EasyDifficultyProximityLevelTime = 2.0f;
+    public const float k_EasyDifficultyReactionLevelMinTime = 3.0f;
+    public const float k_EasyDifficultyReactionLevelMaxTime = 5.0f;
+    public const float k_EasyDifficultyShapeSpeed = 1.5f;
 
     public const int k_NormalDifficultyLevelMinShapes = 9;
     public const int k_NormalDifficultyLevelMaxShapes = 12;

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7544865291638142597}
   - component: {fileID: 7544865291638142596}
   - component: {fileID: 7544865291638142599}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PinkTriangleDestroyEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

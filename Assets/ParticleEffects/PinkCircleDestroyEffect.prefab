@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8480611403869777314}
   - component: {fileID: 8480611403869777315}
   - component: {fileID: 8480611403869777312}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PinkCircleDestroyEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

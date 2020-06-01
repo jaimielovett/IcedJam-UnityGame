@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9004541695735694633}
   - component: {fileID: 9004541695735694632}
   - component: {fileID: 9004541695735694635}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PurpleSquareDestroyEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7660787092987852104}
   - component: {fileID: 7660787092987852105}
   - component: {fileID: 7660787092987852106}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreenCircleDestroyEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

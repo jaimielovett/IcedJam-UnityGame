@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2931851259438159891}
   - component: {fileID: 2931851259438159890}
   - component: {fileID: 2931851259438159889}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedCircleDestroyEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

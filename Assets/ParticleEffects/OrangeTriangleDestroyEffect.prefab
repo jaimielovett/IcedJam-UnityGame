@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4005660715808406208}
   - component: {fileID: 4005660715808406209}
   - component: {fileID: 4005660715808406210}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: OrangeTriangleDestroyEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

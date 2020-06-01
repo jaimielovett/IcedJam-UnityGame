@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2636833978625227433}
   - component: {fileID: 2636833978625227432}
   - component: {fileID: 2636833978625227435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: YellowSquareDestroyEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
